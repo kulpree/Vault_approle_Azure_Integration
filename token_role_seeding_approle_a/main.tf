@@ -7,7 +7,7 @@ resource "vault_approle_auth_backend_login" "login" {
 }
 
 output "token-a" {
-  token_value = vault_approle_auth_backend_login.login
+  value = vault_approle_auth_backend_login.login
 }
 
 resource "vault_approle_auth_backend_role_secret_id" "id_b" {
@@ -15,5 +15,5 @@ resource "vault_approle_auth_backend_role_secret_id" "id_b" {
 }
 
 output "secret_id_b" {
-  secret_id_b = vault_approle_auth_backend_role_secret_id.id_b.secret_id
+  value = vault_approle_auth_backend_role_secret_id.id_b.secret_id
 }

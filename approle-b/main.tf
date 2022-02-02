@@ -15,10 +15,10 @@ data "vault_azure_access_credentials" "creds" {
   validate_creds              = true
 }
 
-provider "azure" {
-  client_id     = data.vault_azure_access_credentials.creds.client_id
-  client_secret = data.vault_azure_access_credentials.creds.client_secret
-}
+# provider "azure" {
+#   client_id     = data.vault_azure_access_credentials.creds.client_id
+#   client_secret = data.vault_azure_access_credentials.creds.client_secret
+# }
 
 output "azure_client_id" {
   value = data.vault_azure_access_credentials.creds.client_id
