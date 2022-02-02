@@ -1,7 +1,5 @@
 module "GET-TOKEN-VIA-APPROLE" {
   source = "./token_role_seeding_approle_a"
-  role_id_a = var.role_id_a
-  secret_id_a = var.secret_id_a
 }
 
 
