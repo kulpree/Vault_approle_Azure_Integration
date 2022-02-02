@@ -10,6 +10,14 @@ terraform {
 
 provider "vault" {
   address = var.VAULT_ADDR
+  token_name = "vault-config-remote-dev"
+  auth_login {
+    path = "auth/approle/login"
+    parameters = {
+      role_id   = var.role_id_a
+      secret_id = var.secret_id_a
+    }
+  }
 }
 
 resource "vault_approle_auth_backend_login" "login" {
