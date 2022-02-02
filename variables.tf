@@ -1,5 +1,3 @@
-
-
 variable "role_id_a" {
   description = "Role ID of approle A"
   type = string
