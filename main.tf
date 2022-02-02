@@ -1,5 +1,5 @@
 module "GET-TOKEN-VIA-APPROLE" {
-  source = "./token-role-seeding_approle-a"
+  source = "./token_role_seeding_approle_a"
 }
 
 
