@@ -3,15 +3,13 @@ terraform {
     vault = {
       source  = "hashicorp/vault"
       version = "3.2.1"
-      hostname = var.VAULT_ADDR
+
     }
   }
 }
 
-# provider "vault" {
-#   hostname = var.tf_hostname
-#   token    = var.tf_token
-# }
+provider "vault" {
+}
 
 resource "vault_approle_auth_backend_login" "login" {
   role_id   = var.role_id_a
