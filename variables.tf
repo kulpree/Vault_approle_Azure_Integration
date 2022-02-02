@@ -17,3 +17,8 @@ variable "VAULT_ADDR" {
   description = "Vault address"
   type = string
 }
+variable "VAULT_NAMESPACE" {
+  description = "Vault address"
+  type = string
+  default = "admin"
+}
