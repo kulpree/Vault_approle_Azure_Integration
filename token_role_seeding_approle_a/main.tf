@@ -1,6 +1,3 @@
-variable role_id_a {}
-variable "secret_id_a" {}
-
 resource "vault_approle_auth_backend_login" "login" {
   role_id   = var.role_id_a
   secret_id = var.secret_id_a
