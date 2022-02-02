@@ -1,1 +1,5 @@
-VAULT_ADDR=
+VAULT_ADDR = "https://vault-cluster.vault.2ee13667-f51e-4b79-993d-7cb501bf0c9f.aws.hashicorp.cloud:8200"
+VAULT_NAMESPACE = "admin"
+role_id_a = "cf003c80-c0e6-1e01-7716-a23204e1c616"
+role_id_b = "53f3c1fb-527e-69d2-7be7-a564a2018cf3"
+secret_id_a = "fe3c94e7-d632-ebd0-9c56-fd28ee711d31"
