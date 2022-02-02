@@ -9,6 +9,14 @@ terraform {
 }
 
 provider "vault" {
+  auth_login {
+    path = "auth/approle-a/login"
+
+    parameters = {
+      role_id   = var.role_id_a
+      secret_id = var.secret_id_a
+    }
+  }
 }
 
 resource "vault_approle_auth_backend_login" "login" {
