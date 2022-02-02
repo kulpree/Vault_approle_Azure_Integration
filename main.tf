@@ -11,7 +11,7 @@ terraform {
 provider "vault" {
   address = var.VAULT_ADDR
   auth_login {
-    path = "auth/approle-a/login"
+    path = "auth/approle/login"
     parameters = {
       role_id   = var.role_id_a
       secret_id = var.secret_id_a
