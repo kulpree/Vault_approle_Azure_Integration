@@ -1,7 +1,7 @@
 
 resource "vault_approle_auth_backend_login" "login_b" {
   role_id   = var.role_id_b
-  secret_id = var.secret_id
+  secret_id = var.secret_id_b
 }
 
 output "approle-secret_id-info" {
