@@ -22,3 +22,9 @@ variable "VAULT_NAMESPACE" {
   type = string
   default = "admin"
 }
+
+variable "VAULT_TOKEN" {
+  description = "Vault token"
+  type = string
+  
+}
