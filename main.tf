@@ -11,6 +11,7 @@ terraform {
 provider "vault" {
   address = var.VAULT_ADDR
   namespace  = var.VAULT_NAMESPACE
+  token = var.VAULT_TOKEN
   auth_login {
     path = "auth/approle/login"
     parameters = {
