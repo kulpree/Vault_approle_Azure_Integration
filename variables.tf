@@ -12,3 +12,8 @@ variable "role_id_b" {
   description = "Role ID of approle B"
   type = string
 }
+
+variable "VAULT_ADDR" {
+  description = "Vault address"
+  type = string
+}

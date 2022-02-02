@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "vault" {
-  address = env.VAULT_ADDR
+  address = var.VAULT_ADDR
   auth_login {
     path = "auth/approle-a/login"
     parameters = {
